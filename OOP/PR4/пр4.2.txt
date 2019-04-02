@@ -1,0 +1,42 @@
+#include "pch.h"
+#include <iostream>
+// в заголовочном файле <ctime> содержится прототип функции time()
+#include <ctime>
+using namespace std;
+int main()
+{
+	int x, y;
+	x = 0;
+	setlocale(LC_ALL, "Russian");
+	while (x == 0)
+	{
+
+
+		srand(time(0)); // генерация случайных чисел
+		int *a = new int[12]; // создание динамического массива вещественных чисел на десять элементов
+		for (int c = 0; c < 12; c++)
+			a[c] = c+1; //заполнение массива случайными числами с масштабированием от 1 до 10
+		cout << "array = ";
+		for (int c = 0; c < 12; c++)
+		{
+			cout << a[c] << "\t";
+		}
+
+
+		for (int c = 0; c < 12; c=c+2)
+		{
+			swap(a[c] , a[c + 1]);
+		}
+
+		cout << endl;
+		cout << "array = ";
+		for (int c = 0; c < 12; c++)
+			cout << a[c] << "    ";
+		delete[]a; // высвобождение памяти 
+		cout << endl;
+		cout << "повторить" << " " << "введите 0 выход 1";
+		cin >> y;
+		x = x + y;
+	}
+	system("pause");
+}	
