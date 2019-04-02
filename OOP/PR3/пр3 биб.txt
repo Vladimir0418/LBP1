@@ -1,0 +1,48 @@
+#include "pch.h"
+#include <iostream>
+#include <string>
+using namespace std;
+class beb
+{
+public:
+	int nomer;
+	string Famili;
+	int kolvok;
+	string godendo;
+	long long nomertel;
+
+
+};
+int main()
+{
+	int n;
+	int k;
+	k = 1;
+	setlocale(LC_ALL, "Russian");
+	beb carta[400];
+	cout << "введите кол-во карт" << endl;
+	cin >> n;
+	for (int i = 0; i < n; i++)
+	{
+		cout << "введите фамилию" << endl;
+		cin >> carta[i].Famili;
+		cout << "введите кол-во не сданные книги" << endl;
+		cin >> carta[i].kolvok;
+		cout << "введите кол-во срок годности абонимента" << endl;
+		cin >> carta[i].godendo;
+		cout << "введите телефона" << endl;
+		cin >> carta[i].nomertel;
+	}
+
+	for (int i = 0; i < n; i++)
+	{
+
+		cout << i + 1 << ")" << carta[i].Famili << " " << carta[i].kolvok << " " << carta[i].godendo << " " << carta[i].nomertel<< endl;
+
+	}
+
+
+
+	return 0;
+
+}
