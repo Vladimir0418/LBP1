@@ -10,10 +10,11 @@ int main()
 	string name;
 	
 	setlocale(LC_ALL, "Russian");
-	cout << "ââåäèòå âàøå èìÿ";
+	cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ð°ÑˆÐµ Ð¸Ð¼Ñ";
 	cin >> name;
     cout<<"Hello " << name;	
 	return 0;
 }
 	
+
 
