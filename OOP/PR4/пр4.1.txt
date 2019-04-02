@@ -1,0 +1,33 @@
+#include "pch.h"
+#include <iostream>
+// в заголовочном файле <ctime> содержится прототип функции time()
+#include <ctime> 
+// в заголовочном файле <iomanip> содержится прототип функции setprecision()
+#include <iomanip> 
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int x,y;
+     x=1;
+	while (x==1)
+	{
+
+
+		srand(time(0)); // генерация случайных чисел
+		float *ptrarray = new float[10]; // создание динамического массива вещественных чисел на десять элементов
+		for (int count = 0; count < 10; count++)
+			ptrarray[count] = (rand() % 10 + 1) / float((rand() % 10 + 1)); //заполнение массива случайными числами с масштабированием от 1 до 10
+		cout << "array = ";
+		for (int count = 0; count < 10; count++)
+			cout << setprecision(2) << ptrarray[count] << "    ";
+		delete[] ptrarray; // высвобождение памяти 
+		cout << endl;
+		cout << "повторить" << " " << "введите 0 выход 1";
+		cin >> y;
+		x = x+y;
+	}
+	system("pause");
+	return 0;
+}
