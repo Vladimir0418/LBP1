@@ -5,16 +5,15 @@
 using namespace std;
 int main()
 {
-	
 
 	float a, b, s;
 	int c;
 	setlocale(LC_ALL, "Russian");
-	cout << "������� �����";
+	cout << "введите число";
 		cin >> a;
-		cout << "�������� ���� 1)+ 2)- 3)* 4)/";
+		cout << "выберите знак 1)+ 2)- 3)* 4)/";
 		cin >> c;
-		cout << "������� �����";
+		cout << "введите число";
 		cin >> b;
 
 switch (c)
