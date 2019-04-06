@@ -1,7 +1,6 @@
 ﻿#include "pch.h"
 
 #include <iostream>
-#include <numeric>
 #include <ctime>
 using namespace std;
 void puz(int, int *);
