@@ -37,7 +37,7 @@ int main()
 
 		cout << "Файл не открыт!\n\n" << endl;
 
-		return ;
+		return 1;
 
 	}
 
