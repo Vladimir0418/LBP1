@@ -13,11 +13,11 @@ int main()
 
 {
 
-	setlocale(LC_ALL, "rus");
+	setlocale(LC_ALL, "Russian");
 
 	string s;
 
-	ifstream file("fff.txt");
+	ifstream file("fal.txt");
 
 
 
@@ -37,7 +37,7 @@ int main()
 
 		cout << "Файл не открыт!\n\n" << endl;
 
-		return -1;
+		return ;
 
 	}
 
