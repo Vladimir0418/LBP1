@@ -1,48 +1,15 @@
 ﻿#include "pch.h"
 #include <fstream>
-
 #include <iostream>
-
 #include <string>
-
 using namespace std;
-
-
-
 int main()
-
 {
-
-	setlocale(LC_ALL, "Russian");
-
-	string s;
-
-	ifstream file("fal.txt");
-
-
-
-	if (file.is_open()) { // вызов метода is_open()
-
-		cout << "Все ОК! Файл открыт!\n\n" << endl;
-
-		for (file >> s; !file.eof(); file >> s)
-
-			cout << s << endl;
-
-	}
-
-	else
-
-	{
-
-		cout << "Файл не открыт!\n\n" << endl;
-
-		return 1;
-
-	}
-
-	system("pause");
-
-	return 0;
-
+string s;
+cin >> s;
+ofstream fout("fff.txt"); // создаём объект классаofstream для записи и связываем его с файлом cppstudio.txt
+fout << s; // запись строки в файл
+fout.close(); // закрываем файл
+system("pause");
+return 0;
 }
