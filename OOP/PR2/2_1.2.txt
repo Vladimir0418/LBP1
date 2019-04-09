@@ -1,0 +1,63 @@
+#include "pch.h"
+
+#include <iostream>
+
+#include <string>
+
+#include <math.h>
+
+using namespace std;
+
+int main()
+
+{
+
+
+
+	float a, b,z,t;
+
+	setlocale(LC_ALL, "Russian");
+
+	a =-0.6;
+
+	b =5.3;
+
+	if (a<b)
+
+	{
+
+		z = pow(1,2);
+
+	}
+
+	z = 0;
+
+	if (z < b)
+
+	{
+
+	
+
+	}
+
+	else
+
+		if (n = b)
+
+		{
+
+			m = 0;
+
+	    }
+
+	m = 0;
+
+	cout << a << " " << b << " " << n << " " << m;
+
+
+
+
+
+	return 0;
+
+}
