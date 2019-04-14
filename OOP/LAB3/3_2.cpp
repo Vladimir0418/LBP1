@@ -15,15 +15,15 @@ public:
 int main()
 {
 Tiles a, b;
-a.brand = "pl";
-a.price = 1000;
-a.size_h = 10;
-a.size_w = 10;
+a.brand = "caf1";
+a.price = 999;
+a.size_h = 20;
+a.size_w = 20;
 cout << a.get_Data() << endl;
-b.brand = "ga";
-b.price = 2000;
-b.size_h = 20;
-b.size_w = 30;
+b.brand = "caf2";
+b.price = 3000;
+b.size_h = 40;
+b.size_w = 50;
 cout << b.get_Data() << endl;
 system("pause");
 return 0;
