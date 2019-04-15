@@ -26,7 +26,7 @@ this->year = other.year;
 ~Child() {};
 void reset_data() 
 {
-cout << "vvedite name surname year" << endl;
+cout << "введите имя фамилию кол-во лет" << endl;
 cin >> name;
 cin >> surname;
 cin >> year;
@@ -38,6 +38,7 @@ return name + ' ' + surname + ' ' + to_string(year);
 };
 int main()
 {
+	setlocale(LC_ALL,"Russian");
 Child a("gdh", "fgdf", 45), b("", "", 0);
 cout << a.get_data() << endl;
 a.reset_data();
